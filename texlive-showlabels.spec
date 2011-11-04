@@ -56,6 +56,7 @@ for others, such as the \ref or \begin commands.
 #- source
 %doc %{_texmfdistdir}/source/latex/showlabels/showlabels.dtx
 %doc %{_texmfdistdir}/source/latex/showlabels/showlabels.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +67,5 @@ for others, such as the \ref or \begin commands.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
