@@ -56,3 +56,17 @@ for others, such as the \ref or \begin commands.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6.5-2
++ Revision: 755986
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6.5-1
++ Revision: 719529
+- texlive-showlabels
+- texlive-showlabels
+- texlive-showlabels
+- texlive-showlabels
+
