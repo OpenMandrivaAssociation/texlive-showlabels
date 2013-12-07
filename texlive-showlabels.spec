@@ -6,7 +6,7 @@
 # catalog-version 1.6.5
 Name:		texlive-showlabels
 Version:	1.6.5
-Release:	5
+Release:	6
 Summary:	Show label commands in the margin
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showlabels
