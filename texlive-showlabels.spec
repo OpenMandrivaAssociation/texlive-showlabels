@@ -1,12 +1,12 @@
-# revision 15878
+# revision 32364
 # category Package
 # catalog-ctan /macros/latex/contrib/showlabels
-# catalog-date 2009-05-28 00:22:07 +0200
+# catalog-date 2013-12-07 01:06:37 +0100
 # catalog-license gpl
-# catalog-version 1.6.5
+# catalog-version 1.6.6
 Name:		texlive-showlabels
-Version:	1.6.5
-Release:	6
+Version:	1.6.6
+Release:	1
 Summary:	Show label commands in the margin
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showlabels
@@ -38,12 +38,14 @@ for others, such as the \ref or \begin commands.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/showlabels/showlabels.sty
-%doc %{_texmfdistdir}/doc/latex/showlabels/LICENCE
 %doc %{_texmfdistdir}/doc/latex/showlabels/README
 %doc %{_texmfdistdir}/doc/latex/showlabels/VERSION
+%doc %{_texmfdistdir}/doc/latex/showlabels/lppl.txt
 %doc %{_texmfdistdir}/doc/latex/showlabels/showlabels.html
 %doc %{_texmfdistdir}/doc/latex/showlabels/showlabels.pdf
+%doc %{_texmfdistdir}/doc/latex/showlabels/style.css
 #- source
+%doc %{_texmfdistdir}/source/latex/showlabels/showlabels.drv
 %doc %{_texmfdistdir}/source/latex/showlabels/showlabels.dtx
 %doc %{_texmfdistdir}/source/latex/showlabels/showlabels.ins
 
@@ -56,17 +58,3 @@ for others, such as the \ref or \begin commands.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6.5-2
-+ Revision: 755986
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6.5-1
-+ Revision: 719529
-- texlive-showlabels
-- texlive-showlabels
-- texlive-showlabels
-- texlive-showlabels
-
