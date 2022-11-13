@@ -1,19 +1,13 @@
-# revision 32364
-# category Package
-# catalog-ctan /macros/latex/contrib/showlabels
-# catalog-date 2013-12-07 01:06:37 +0100
-# catalog-license gpl
-# catalog-version 1.6.6
 Name:		texlive-showlabels
-Version:	1.8
-Release:	2
+Version:	63940
+Release:	1
 Summary:	Show label commands in the margin
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showlabels
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showlabels.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showlabels.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showlabels.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showlabels.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showlabels.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showlabels.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ obviously useful is the \cite command, but it's easy to do it
 for others, such as the \ref or \begin commands.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +45,8 @@ for others, such as the \ref or \begin commands.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
