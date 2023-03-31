@@ -1,6 +1,6 @@
 Name:		texlive-showlabels
 Version:	63940
-Release:	1
+Release:	2
 Summary:	Show label commands in the margin
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showlabels
