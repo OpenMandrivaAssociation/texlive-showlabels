@@ -3,7 +3,7 @@ Version:	63940
 Release:	2
 Summary:	Show label commands in the margin
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/showlabels
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/showlabels
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showlabels.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/showlabels.doc.r%{version}.tar.xz
